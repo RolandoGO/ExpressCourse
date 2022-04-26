@@ -1,7 +1,7 @@
 const express = require("express")
-const HomeController = require("../Controllers/HomeController")
+const {WelcomeMsj} = require("../Controllers/HomeController")
 const router = express.Router()
 
-router.get("/", HomeController.WelcomeMsj)
+router.get("/", WelcomeMsj)
 
 module.exports = router

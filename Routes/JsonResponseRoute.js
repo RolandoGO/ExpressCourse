@@ -1,7 +1,7 @@
 const express = require("express")
-const JsonResponseController = require("../Controllers/JsonResponseController")
+const {response} = require("../Controllers/JsonResponseController")
 const router = express.Router()
 
-router.get("/", JsonResponseController.response)
+router.get("/", response)
 
 module.exports = router
